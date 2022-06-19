@@ -1,5 +1,5 @@
 # tagebuch-frontend
-
+[![CI](https://github.com/rkrajniak/Tagebuch-Frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/rkrajniak/Tagebuch-Frontend/actions/workflows/ci.yml)
 ## Project setup
 ```
 npm install
