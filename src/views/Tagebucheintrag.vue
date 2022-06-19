@@ -3,9 +3,11 @@
   <div class="card" style="width: 18rem;">
     <div class="card-body">
       <div class="col" v-for="tagebuch in tagebuecher" :key="tagebuch.id">
+        <div class="card h-100">
       <h5 class="card-title">{{tagebuch.author}}</h5>
       <p class="card-text">{{tagebuch.datum}} {{tagebuch.erlebnis}} {{tagebuch.rating}}</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
       </div>
     </div>
   </div>
@@ -20,7 +22,7 @@ export default {
     }
   },
   mounted () {
-    const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/tagebuch/'
+    const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/tagebuch'
     const requestOptions = {
       method: 'GET',
       redirect: 'follow'
