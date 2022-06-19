@@ -21,16 +21,7 @@ export default {
   name: 'Tagebuch-eintrag',
   data () {
     return {
-      tagebuecher: [
-        {
-          id: 1,
-          author: 'max',
-          datum: '2022-06-19',
-          erlebnis: 'test',
-          rating: 'GUT'
-        }
-
-      ]
+      tagebuecher: []
     }
   },
   mounted () {
