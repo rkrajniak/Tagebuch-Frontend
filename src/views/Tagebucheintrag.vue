@@ -20,7 +20,7 @@ export default {
     }
   },
   mounted () {
-    const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/tagebuch'
+    const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '//api/v1/tagebuch'
     const requestOptions = {
       method: 'GET',
       redirect: 'follow'
